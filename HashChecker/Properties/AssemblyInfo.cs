@@ -8,11 +8,11 @@ using System.Windows;
 // 控制。更改这些特性值可修改
 // 与程序集关联的信息。
 [assembly: AssemblyTitle("HashChecker")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("An open source project that facilitates people to check files.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("https://github.com/nl8590687/HashChecker")]
 [assembly: AssemblyProduct("HashChecker")]
-[assembly: AssemblyCopyright("Copyright ©  2017")]
+[assembly: AssemblyCopyright("Copyright ©  2017 nl8590687")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
