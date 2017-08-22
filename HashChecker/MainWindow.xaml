@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HashChecker"
         mc:Ignorable="d"
-        Title="Hash Checker" Height="500" Width="800" ResizeMode="CanMinimize">
+        Title="Hash Checker" Height="500" Width="800" ResizeMode="CanMinimize" Icon="logo.ico" Unloaded="Window_Unloaded" HorizontalAlignment="Center" VerticalAlignment="Center" WindowStartupLocation="CenterScreen">
     <Grid>
         <TextBox x:Name="textBox_FileName" HorizontalAlignment="Left" Height="23" Margin="95,21,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="448"/>
         <Button x:Name="button_browse" Content="Broese File" HorizontalAlignment="Left" Height="23" Margin="549,21,0,0" VerticalAlignment="Top" Width="80" Click="button_browse_Click"/>
@@ -15,7 +15,7 @@
         <CheckBox x:Name="checkBox_creationtime" Content="Creation Time" HorizontalAlignment="Left" Height="23" Margin="655,68,0,0" VerticalAlignment="Top" Width="125" IsChecked="True"/>
         <CheckBox x:Name="checkBox_md5" Content="MD5" HorizontalAlignment="Left" Height="23" Margin="655,83,0,0" VerticalAlignment="Top" Width="125" IsChecked="True"/>
         <CheckBox x:Name="checkBox_sha1" Content="SHA1" HorizontalAlignment="Left" Height="23" Margin="655,99,0,0" VerticalAlignment="Top" Width="125" IsChecked="True"/>
-        <CheckBox x:Name="checkBox_sha256" Content="SHA256" HorizontalAlignment="Left" Height="23" Margin="655,117,0,0" VerticalAlignment="Top" Width="125"/>
+        <CheckBox x:Name="checkBox_sha256" Content="SHA256" HorizontalAlignment="Left" Height="23" Margin="655,117,0,0" VerticalAlignment="Top" Width="125" IsChecked="True"/>
         <CheckBox x:Name="checkBox_sha384" Content="SHA384" HorizontalAlignment="Left" Height="23" Margin="655,135,0,0" VerticalAlignment="Top" Width="125"/>
         <CheckBox x:Name="checkBox_sha512" Content="SHA512" HorizontalAlignment="Left" Height="23" Margin="655,154,0,0" VerticalAlignment="Top" Width="125"/>
         <CheckBox x:Name="checkBox_crc32" Content="CRC32" HorizontalAlignment="Left" Height="23" Margin="655,172,0,0" VerticalAlignment="Top" Width="125"/>
@@ -23,10 +23,11 @@
         <Label x:Name="label_option" Content="Option: " HorizontalAlignment="Left" Height="25" Margin="655,15,0,0" VerticalAlignment="Top" Width="116"/>
         <Button x:Name="button_CaculateFileHash" Content="Caculate File Hash" HorizontalAlignment="Left" Height="25" Margin="655,217,0,0" VerticalAlignment="Top" Width="120" Click="button_CaculateFileHash_Click"/>
         <Button x:Name="button_CaculateTextHash" Content="Caculate Text Hash" HorizontalAlignment="Left" Height="25" Margin="655,249,0,0" VerticalAlignment="Top" Width="120" Click="button_CaculateTextHash_Click"/>
+        <Button x:Name="button_Compare" Content="Compare Hash" HorizontalAlignment="Left" Height="25" Margin="655,279,0,0" VerticalAlignment="Top" Width="120" Click="button_Compare_Click"/>
         <Label x:Name="labe_filename" Content="File Name: " HorizontalAlignment="Left" Height="25" Margin="10,19,0,0" VerticalAlignment="Top" Width="80"/>
         <Label x:Name="labe_InputText" Content="Input Text: " HorizontalAlignment="Left" Height="25" Margin="10,49,0,0" VerticalAlignment="Top" Width="106"/>
         <Label x:Name="labe_OutputResult" Content="Output Result: " HorizontalAlignment="Left" Height="25" Margin="10,230,0,0" VerticalAlignment="Top" Width="106"/>
-        <TextBox x:Name="textBox_statement" HorizontalAlignment="Left" Height="176" Margin="655,279,0,0" TextWrapping="Wrap" Text="Statement: " VerticalAlignment="Top" Width="120" AcceptsReturn="True" AcceptsTab="True" IsReadOnly="True" Loaded="textBox_statement_Loaded"/>
+        <TextBox x:Name="textBox_statement" HorizontalAlignment="Left" Height="146" Margin="655,309,0,0" TextWrapping="Wrap" Text="Statement: " VerticalAlignment="Top" Width="120" AcceptsReturn="True" AcceptsTab="True" IsReadOnly="True" Loaded="textBox_statement_Loaded"/>
 
     </Grid>
 </Window>

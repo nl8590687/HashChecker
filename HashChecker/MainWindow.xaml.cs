@@ -178,6 +178,16 @@ namespace HashChecker
                 textBox_OutputResult.Text += "CRC64: " + r.crc64 + "\n";
             }
             textBox_OutputResult.Text += "====================\n";
+
+            textBox_OutputResult.ScrollToEnd();
+            
+        }
+
+        private void button_Compare_Click(object sender, RoutedEventArgs e)
+        {
+            //Open Hash Compare Window. 
+            Window_HashCompare win_hashcompare = new Window_HashCompare();
+            win_hashcompare.Show();
         }
 
         private void textBox_statement_Loaded(object sender, RoutedEventArgs e)
@@ -185,6 +195,11 @@ namespace HashChecker
             textBox_statement.Text = "Statement: \nThis is an open source project "
                 + "to facilitates people to check files. "
                 + "Please look at \" https://github.com/nl8590687/HashChecker \" for more information. ";
+        }
+
+        private void Window_Unloaded(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
         }
     }
 }
