@@ -8,7 +8,7 @@
         Title="Hash Checker" Height="500" Width="800" ResizeMode="CanMinimize" Icon="logo.ico" Unloaded="Window_Unloaded" HorizontalAlignment="Center" VerticalAlignment="Center" WindowStartupLocation="CenterScreen">
     <Grid>
         <TextBox x:Name="textBox_FileName" HorizontalAlignment="Left" Height="23" Margin="95,21,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="448"/>
-        <Button x:Name="button_browse" Content="Broese File" HorizontalAlignment="Left" Height="23" Margin="549,21,0,0" VerticalAlignment="Top" Width="80" Click="button_browse_Click"/>
+        <Button x:Name="button_browse" Content="Browse File" HorizontalAlignment="Left" Height="23" Margin="549,21,0,0" VerticalAlignment="Top" Width="80" Click="button_browse_Click"/>
         <TextBox x:Name="textBox_InputText" HorizontalAlignment="Left" Height="150" Margin="10,78,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="619" ScrollViewer.CanContentScroll="True" VerticalScrollBarVisibility="Auto" AcceptsReturn="True" AcceptsTab="True"/>
         <TextBox x:Name="textBox_OutputResult" HorizontalAlignment="Left" Height="200" Margin="10,255,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="619" VerticalScrollBarVisibility="Auto" AcceptsReturn="True" AcceptsTab="True"/>
         <CheckBox x:Name="checkBox_filesize" Content="File Size" HorizontalAlignment="Left" Height="23" Margin="655,49,0,0" VerticalAlignment="Top" Width="125" IsChecked="True"/>
