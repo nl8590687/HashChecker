@@ -201,5 +201,22 @@ namespace HashChecker
         {
             Application.Current.Shutdown();
         }
+
+        //textbox "textBox_FileName" PreviewDragOver Event
+        private void TextBox_PreviewDragOver(object sender, DragEventArgs e)
+        {
+            e.Effects = DragDropEffects.Copy;
+            e.Handled = true;
+        }
+
+        //textbox "textBox_FileName" PreviewDrop Event
+        private void TextBox_PreviewDrop(object sender, DragEventArgs e)
+        {
+            foreach (string f in (string[])e.Data.GetData(DataFormats.FileDrop))
+            {
+                textBox_FileName.Text = f;
+            }
+        }
+        
     }
 }

@@ -5,9 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HashChecker"
         mc:Ignorable="d"
-        Title="Hash Checker" Height="500" Width="800" ResizeMode="CanMinimize" Icon="logo.ico" Unloaded="Window_Unloaded" HorizontalAlignment="Center" VerticalAlignment="Center" WindowStartupLocation="CenterScreen">
+        Title="Hash Checker" Height="530" Width="800" ResizeMode="CanMinimize" Icon="logo.ico" Unloaded="Window_Unloaded" HorizontalAlignment="Center" VerticalAlignment="Center" WindowStartupLocation="CenterScreen">
     <Grid>
-        <TextBox x:Name="textBox_FileName" HorizontalAlignment="Left" Height="23" Margin="95,21,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="448"/>
+        <TextBox x:Name="textBox_FileName" HorizontalAlignment="Left" Height="23" Margin="95,21,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="448" PreviewDragOver="TextBox_PreviewDragOver" PreviewDrop="TextBox_PreviewDrop"/>
         <Button x:Name="button_browse" Content="Browse File" HorizontalAlignment="Left" Height="23" Margin="549,21,0,0" VerticalAlignment="Top" Width="80" Click="button_browse_Click"/>
         <TextBox x:Name="textBox_InputText" HorizontalAlignment="Left" Height="150" Margin="10,78,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="619" ScrollViewer.CanContentScroll="True" VerticalScrollBarVisibility="Auto" AcceptsReturn="True" AcceptsTab="True"/>
         <TextBox x:Name="textBox_OutputResult" HorizontalAlignment="Left" Height="200" Margin="10,255,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="619" VerticalScrollBarVisibility="Auto" AcceptsReturn="True" AcceptsTab="True"/>
@@ -28,6 +28,7 @@
         <Label x:Name="labe_InputText" Content="Input Text: " HorizontalAlignment="Left" Height="25" Margin="10,49,0,0" VerticalAlignment="Top" Width="106"/>
         <Label x:Name="labe_OutputResult" Content="Output Result: " HorizontalAlignment="Left" Height="25" Margin="10,230,0,0" VerticalAlignment="Top" Width="106"/>
         <TextBox x:Name="textBox_statement" HorizontalAlignment="Left" Height="146" Margin="655,309,0,0" TextWrapping="Wrap" Text="Statement: " VerticalAlignment="Top" Width="120" AcceptsReturn="True" AcceptsTab="True" IsReadOnly="True" Loaded="textBox_statement_Loaded"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,469,0,0" TextWrapping="Wrap" Text="Hash Checker software author: AILemon (https://ailemon.me/)" VerticalAlignment="Top" Height="22" Width="765" />
 
     </Grid>
 </Window>

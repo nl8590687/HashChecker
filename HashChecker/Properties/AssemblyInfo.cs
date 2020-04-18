@@ -12,7 +12,7 @@ using System.Windows;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("https://github.com/nl8590687/HashChecker")]
 [assembly: AssemblyProduct("HashChecker")]
-[assembly: AssemblyCopyright("Copyright ©  2017-2019 nl8590687")]
+[assembly: AssemblyCopyright("Copyright ©  2017-2020 nl8590687 (ailemon)")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -51,5 +51,5 @@ using System.Windows;
 //可以指定所有这些值，也可以使用“生成号”和“修订号”的默认值，
 // 方法是按如下所示使用“*”: :
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.2.0.2")]
-[assembly: AssemblyFileVersion("1.2.0.2")]
+[assembly: AssemblyVersion("1.3.0.3")]
+[assembly: AssemblyFileVersion("1.3.0.3")]
